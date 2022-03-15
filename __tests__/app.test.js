@@ -15,13 +15,13 @@ const Order = require('../lib/models/Order');
 // }
 
 // TODO: Remove this function & use the Order model
-async function getOrderById(id) {
-  const { rows } = await pool.query('SELECT * FROM orders WHERE id=$1;', [id]);
+// async function getOrderById(id) {
+//   const { rows } = await pool.query('SELECT * FROM orders WHERE id=$1;', [id]);
 
-  if (!rows[0]) return null;
+//   if (!rows[0]) return null;
 
-  return new Order(rows[0]);
-}
+//   return new Order(rows[0]);
+// }
 
 describe('refactory routes', () => {
   beforeEach(() => {
